@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statichant</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.0/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Additional Custom Styles */
+        .header-nav a:hover, .dropdown-content a:hover {
+            background-color: transparent;
+        }
+        .dropdown-content {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial-card img {
+            width: 100px;
+            height: 100px;
+        }
+        .container2 {
+            display: flex;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-transparent py-4 px-6 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Statichant</h1>
+        <nav class="flex items-center space-x-4">
+            <a href="homepage.html" class="hover:bg-gray-200 px-4 py-2 rounded">Home</a>
+            <a href="projects.html" class="hover:bg-gray-200 px-4 py-2 rounded">Projects</a>
+            <a href="blog.html" class="hover:bg-gray-200 px-4 py-2 rounded">Blog</a>
+            <div class="relative">
+                <a href="#" class="hover:bg-gray-200 px-4 py-2 rounded">Pages</a>
+                <div class="dropdown-content absolute hidden bg-white text-gray-900 rounded shadow-lg mt-2">
+                    <a href="contact.html" class="block px-4 py-2 hover:bg-gray-200">Contact</a>
+                    <a href="about.html" class="block px-4 py-2 hover:bg-gray-200">About</a>
+                    <a href="elements.html" class="block px-4 py-2 hover:bg-gray-200">Element</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container mx-auto flex flex-wrap py-8">
+        <div class="w-full md:w-1/2 flex justify-center items-center">
+            <img src="image/monica1.jpg" alt="Monica" class="w-3/4 max-h-full rounded-lg">
+        </div>
+        <div class="w-full md:w-1/2 px-6">
+            <h1 class="text-5xl font-bold mb-6">I am Sara. I will <br> create designs that <br> can give you value</h1>
+            <p class="text-lg mb-6 leading-relaxed">So, if you're looking for designs that have a high visual impact on <br> your target audience, while also aligning with your brand, let's talk <br> about your project in more detail.</p>
+            <div class="flex mb-6">
+                <input type="email" placeholder="Enter email for more updates" class="p-2 text-sm border rounded-l-md border-gray-300 flex-1">
+                <button class="bg-yellow-400 text-gray-900 p-2 text-sm border rounded-r-md border-gray-300 hover:bg-yellow-300">Subscribe</button>
+            </div>
+        </div>
+    </div>
+    <section class="latest-work text-center py-8">
+        <h2 class="text-3xl font-bold mb-6">Latest Work</h2>
+        <p class="text-lg mb-8">Check out some of my latest design projects.</p>
+        <div class="flex flex-wrap justify-center gap-6">
+            <a href="project1.html" class="w-60 bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-transform transform hover:scale-105">
+                <img src="image/work1.jpg" alt="Project 1" class="w-full h-40 object-cover">
+                <div class="p-4 text-center">
+                    <h3 class="text-xl font-semibold">Script Using Pencil</h3>
+                    <p class="text-gray-600">CALLIGRAPHY</p>
+                </div>
+            </a>
+            <!-- Repeat similar blocks for other projects -->
+        </div>
+        <div class="mt-8">
+            <button onclick="window.location.href='projects.html'" class="bg-yellow-400 text-gray-900 p-2 rounded hover:bg-yellow-300">Show More</button>
+        </div>
+    </section>
+    <section class="testimonial-section py-8">
+        <h2 class="text-3xl font-bold text-center mb-6">What Client Says</h2>
+        <div class="flex flex-wrap justify-center gap-6">
+            <div class="testimonial-card bg-white rounded-lg shadow-lg p-4 text-center w-60">
+                <img src="image/client-1.jpg" alt="Client 1" class="rounded-full mb-2">
+                <p class="text-gray-600">Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration</p>
+            </div>
+            <!-- Repeat similar blocks for other testimonials -->
+        </div>
+    </section>
+    <section class="recent-posts py-8">
+        <h1 class="text-3xl font-bold text-center mb-6">Recent Posts</h1>
+        <p class="text-lg text-center mb-8">Catch up with the latest articles and updates</p>
+        <div class="flex flex-wrap justify-center gap-6">
+            <a href="page1.html" class="w-60 bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-transform transform hover:scale-105">
+                <img src="image/RECENTPOSTS1.jpg" alt="Recent Post 1" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <h4 class="text-sm text-gray-600">Monica 2017</h4>
+                    <h3 class="text-xl font-semibold">That which does not kill us make us stronger</h3>
+                    <p class="text-gray-600">Bring to the table win-win survival strategies to ensure proactive domination...</p>
+                </div>
+            </a>
+            <!-- Repeat similar blocks for other recent posts -->
+        </div>
+    </section>
+    <section class="contact py-8">
+        <div class="flex justify-center gap-4 mb-8">
+            <img src="image/gallery.jpg" alt="Gallery Image 1" class="w-1/4 h-auto">
+            <img src="image/gallery2.jpg" alt="Gallery Image 2" class="w-1/4 h-auto">
+        </div>
+        <div class="container2 flex">
+            <div class="content2 flex-1 p-6">
+                <div class="photo-description flex mb-6">
+                    <div class="photo w-1/2 bg-gray-300 h-48 mr-4">
+                        <img src="image/monica.jpg" alt="Monica" class="w-full h-full object-cover">
+                    </div>
+                    <div class="description">
+                        <h2 class="text-2xl font-semibold mb-4">Monica Hilton</h2>
+                        <p class="text-gray-600">So, if you're looking for designs that have a high visual impact on your target audience, while also aligning with your brand, let's talk about your project in more detail.</p>
+                    </div>
+                </div>
+                <div class="social-media mt-6">
+                    <a href="instagram.com" class="text-2xl mr-4 text-gray-600"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-2xl mr-4 text-gray-600"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-2xl mr-4 text-gray-600"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-2xl text-gray-600"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <nav class="navbar2 flex flex-col justify-center px-6">
+                <ul class="list-none space-y-2">
+                    <li><a href="homepage.html" class="text-gray-600 hover:text-gray-800">Home</a></li>
+                    <li><a href="projects.html" class="text-gray-600 hover:text-gray-800">Projects</a></li>
+                    <li><a href="blog.html" class="text-gray-600 hover:text-gray-800">Blog</a></li>
+                    <li><a href="contact.html" class="text-gray-600 hover:text-gray-800">Contact</a></li>
+                    <li><a href="about.html" class="text-gray-600 hover:text-gray-800">About</a></li>
+                    <li><a href="elements.html" class="text-gray-600 hover:text-gray-800">Element</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <footer class="bg-gray-800 text-white py-4 text-center">
+        <p>&copy; 2024 Statichant. All rights reserved.</p>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Show dropdown content on hover
+        document.querySelectorAll('.relative').forEach(function(dropdown) {
+            dropdown.addEventListener('mouseover', function() {
+                this.querySelector('.dropdown-content').classList.remove('hidden');
+            });
+            dropdown.addEventListener('mouseout', function() {
+                this.querySelector('.dropdown-content').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
